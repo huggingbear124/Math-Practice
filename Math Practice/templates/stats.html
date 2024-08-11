@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Stats{% endblock %}
+
+{% block content %}
+<h2>Your Stats</h2>
+<ul>
+    <li>Addition Correct: {{ stats['addition_correct'] }}</li>
+    <li>Addition Wrong: {{ stats['addition_wrong'] }}</li>
+    <li>Subtraction Correct: {{ stats['subtraction_correct'] }}</li>
+    <li>Subtraction Wrong: {{ stats['subtraction_wrong'] }}</li>
+    <li>Multiplication Correct: {{ stats['multiplication_correct'] }}</li>
+    <li>Multiplication Wrong: {{ stats['multiplication_wrong'] }}</li>
+    <li>Division Correct: {{ stats['division_correct'] }}</li>
+    <li>Division Wrong: {{ stats['division_wrong'] }}</li>
+</ul>
+{% endblock %}
+
